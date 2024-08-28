@@ -1,0 +1,12 @@
+.whatsapp-icon-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000000;
+}
+
+.whatsapp-icon-fixed img {
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: 50px; /* Ajusta el tamaño según tus necesidades */
+}
+

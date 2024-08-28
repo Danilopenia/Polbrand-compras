@@ -1,0 +1,125 @@
+/* Estilos generales para la Navbar */
+.Navbar {
+  height: 100%;
+  width: 100%; /* Por defecto, la Navbar está visible en pantallas grandes */
+  background-color: #050000;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 1; /* Asegúrate de que la Navbar tenga un z-index más alto por defecto */
+  position: fixed; /* Asegura que la Navbar esté por encima de otros elementos */
+}
+
+.Navbar a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin: 20px 0;
+}
+
+.Navbar a:hover {
+  color: #f1f1f1;
+}
+
+/* Estilos para el ícono del menú */
+.menu-icon {
+  display: none; /* El ícono del menú no se muestra en pantallas grandes */
+  opacity: 0.5;
+}
+
+/* Estilos para el ícono de cierre */
+.close-icon {
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 5;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .Navbar {
+    width: 0; /* Por defecto, la Navbar está oculta en pantallas pequeñas */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    padding-top: 60px;
+    z-index: 100000; /* Asegura que la Navbar esté por encima de todos los elementos */
+  }
+
+  .Navbar.open {
+    width: 250px; /* La Navbar se despliega en pantallas pequeñas */
+  }
+
+  .menu-icon {
+    display: block; /* El ícono del menú se muestra en pantallas pequeñas */
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #111;
+    z-index: 1000; /* Asegura que el ícono esté por encima de la Navbar */
+  }
+
+  .Navbar.open .close-icon {
+    display: block; /* Mostrar el ícono de cierre cuando la Navbar está abierta */
+  }
+}
+
+/* Media query para pantallas grandes */
+@media screen and (min-width: 480px) {
+  .Navbar {
+    width: 100%; /* La Navbar ocupa todo el ancho en pantallas grandes */
+    height: 60px;
+    position: relative;
+    display: flex; /* Los elementos se muestran en línea horizontal */
+    background-color: #000000;
+    padding: 5px;
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+  }
+
+  .Navbar a {
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline; /* Los elementos se muestran en línea */
+  }
+}
+
+/* Estilos para el ícono de WhatsApp fijo en la esquina inferior derecha */
+.whatsapp-icon-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* Ajusta el tamaño del ícono según tus necesidades */
+  height: 50px;
+  z-index: 1000; /* Asegúrate de que el ícono esté por encima de otros elementos */
+}
+
+/* Estilos para la imagen de Instagram */
+.insta {
+  width: 30px; /* Ajusta el tamaño según tus necesidades */
+  height: 30px; /* Mantiene la relación de aspecto */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+}
+
+.face {
+  width: 30px; /* Ajusta el tamaño según tus necesidades */
+  height: 30px; /* Mantiene la relación de aspecto */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+}
+
+.maps {
+  width: 35px; /* Ajusta el tamaño según tus necesidades */
+  height: 35px; /* Mantiene la relación de aspecto */
+  object-fit: contain;
+}
+

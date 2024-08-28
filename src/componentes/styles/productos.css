@@ -1,0 +1,193 @@
+a{
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+  margin-bottom: 10%;
+  position: relative; /* Necesario para el posicionamiento del ícono de carrito */
+  text-decoration: none;
+}
+
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.category {
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s;
+}
+
+.category:hover,
+.category.active {
+  border-bottom: 2px solid #000;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ddd;
+  width: 18%; /* Ajuste para mantener 4 tarjetas por fila */
+  text-align: center;
+  box-sizing: border-box;
+  margin: 1%;
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+  position: relative; /* Para ajustar los elementos dentro de la tarjeta */
+  text-decoration: none;
+}
+
+.imgCard {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  max-height: 200px; /* Limita la altura máxima para evitar que las imágenes sean demasiado grandes */
+  object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin distorsionar su aspecto */
+  margin-bottom: 1%; /* Espacio entre la imagen y el texto */
+}
+
+.card h2, .card p {
+  margin: 5px 0; /* Espacio uniforme para los elementos de texto */
+  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  white-space: nowrap; /* Mantiene el texto en una sola línea */
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.buy-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.buy-button:hover {
+  background-color: darkgreen;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  width: 80px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.cart-icon img {
+  width: 100%;
+  height: auto;
+  z-index: 500;
+}
+
+.cart-counter {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgb(12, 136, 16);
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 45%; /* Dos tarjetas por fila */
+    margin: 2%;
+  }
+
+  .imgCard {
+    max-height: 150px; /* Ajusta la altura máxima en pantallas más pequeñas */
+    object-fit: contain; /* Mantiene la imagen dentro del contenedor sin recortarla */
+  }
+
+  .buy-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card {
+    width: 90%; /* Una tarjeta por fila */
+    margin: 5% 0;
+  }
+
+  .imgCard {
+    max-height: 200px; /* Ajusta la altura máxima en pantallas muy pequeñas */
+    object-fit: contain; /* Mantiene la imagen dentro del contenedor sin recortarla */
+  }
+
+  .buy-button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .cart-icon {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
+
+  .cart-counter {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  .products{
+  margin-bottom: 70%;
+
+}
+
+.container .inputP {
+  width: 300px;
+}
+
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 50%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
