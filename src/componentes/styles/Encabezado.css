@@ -146,7 +146,7 @@
 @media screen and (max-width: 480px) {
   .animated-box {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 20%;
     height: auto; /* Ajusta la altura automáticamente */
     padding: 10px;
   }
