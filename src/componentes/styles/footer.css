@@ -9,7 +9,7 @@
   width: 100%;
   height: 200px;
   z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
-  margin-top: 350px; /* Añade un margen del 10% con respecto al contenido superior */
+  margin-top: 200px; /* Añade un margen del 10% con respecto al contenido superior */
 }
 
 .footer-content {

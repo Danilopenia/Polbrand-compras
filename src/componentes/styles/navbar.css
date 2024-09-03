@@ -42,7 +42,6 @@
 }
 
 
-/* Media query para pantallas pequeñas */
 
 /* Estilos para el ícono de WhatsApp fijo en la esquina inferior derecha */
 .whatsapp-icon-fixed {
@@ -84,8 +83,6 @@
     overflow-x: hidden;
     padding-top: 60px;
     z-index: 100000; /* Asegura que la Navbar esté por encima de todos los elementos */
-    display: flex;
-    flex-direction: column; /* Mantiene el contenido en columna */
   }
 
   .Navbar.open {
@@ -106,48 +103,30 @@
   .Navbar.open .close-icon {
     display: block; /* Mostrar el ícono de cierre cuando la Navbar está abierta */
   }
-
-  .divRedes {
+  .divRedes{
     display: flex;
-    justify-content: space-around; /* Coloca las imágenes en una fila */
-    margin-top: auto; /* Empuja las redes al final del navbar */
-    padding-bottom: 20px; /* Espaciado inferior */
-  }
-
-  .divRedes img {
-    margin: 0 10px; /* Espacio entre las imágenes */
+    margin-top: 483px;
+    width: 100px;
   }
 }
 
-/* Media query específica para pantallas de hasta 480px */
-@media screen and (max-width: 480px) {
+/* Media query para pantallas grandes */
+@media screen and (min-width: 480px) {
   .Navbar {
-    width: 0; /* Por defecto, la Navbar está oculta en pantallas pequeñas */
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    padding-top: 60px;
-    z-index: 100000; /* Asegura que la Navbar esté por encima de todos los elementos */
-    display: flex;
-    flex-direction: column; /* Mantiene el contenido en columna */
+    width: 100%; /* La Navbar ocupa todo el ancho en pantallas grandes */
+    height: 60px;
+    position: relative;
+    display: flex; /* Los elementos se muestran en línea horizontal */
+    background-color: #000000;
+    padding: 5px;
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
   }
 
-  .Navbar.open {
-    width: 65%; /* La Navbar ocupa todo el ancho de la pantalla */
+  .Navbar a {
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline; /* Los elementos se muestran en línea */
   }
 
-  .divRedes {
-    display: flex;
-    justify-content: space-around; /* Coloca las imágenes en una fila */
-    margin-top: auto; /* Empuja las redes al final del navbar */
-    padding-bottom: 20px; /* Espaciado inferior */
-  }
-
-  .divRedes img {
-     /* Espacio entre las imágenes */
-    width: 30px;
-  }
+  
 }
-

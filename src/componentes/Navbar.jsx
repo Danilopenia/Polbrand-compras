@@ -41,10 +41,11 @@ const Navbar = () => {
           <Link to="/" onClick={toggleNavbar}>Inicio</Link>
           <Link to="/nosotros" onClick={toggleNavbar}>Nosotros</Link>
         </div>
-        <div className='divRedes'>
+        <div >
+          <div className='divRedes'>
           <a href="https://www.instagram.com/polbrand_bolsas/"><img className='insta' src="/img/insta.png" alt="Instagram" /></a>
           <a href="#"><img className='face' src="/img/face.png" alt="Email" /></a>
-          <a href="#"><img className='maps' src="/img/maps.png" alt="Maps" /></a>
+          <a href="#"><img className='maps' src="/img/maps.png" alt="Maps" /></a></div>
         </div>
       </div>
     </>
