@@ -14,6 +14,7 @@ import "./componentes/styles/Encabezado.css";
 import "./componentes/styles/whatsapp-icon.css";
 import "./componentes/styles/carrito.css";
 
+
 const App = () => {
   return (
     

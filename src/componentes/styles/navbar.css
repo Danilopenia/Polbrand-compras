@@ -8,15 +8,22 @@
   z-index: 1; /* Asegúrate de que la Navbar tenga un z-index más alto por defecto */
   position: fixed; /* Asegura que la Navbar esté por encima de otros elementos */
 }
+.ini-nos{
+  margin-top: 8px;
+}
+.divRedes{
+  margin-top: 10px;
+}
 
 .Navbar a {
   padding: 8px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
   transition: 0.3s;
   margin: 20px 0;
+  
 }
 
 .Navbar a:hover {
@@ -55,23 +62,24 @@
 
 /* Estilos para la imagen de Instagram */
 .insta {
-  width: 30px; /* Ajusta el tamaño según tus necesidades */
-  height: 30px; /* Mantiene la relación de aspecto */
+  width: 25px; /* Ajusta el tamaño según tus necesidades */
+  height: 25px; /* Mantiene la relación de aspecto */
   object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
 }
 
 .face {
-  width: 30px; /* Ajusta el tamaño según tus necesidades */
-  height: 30px; /* Mantiene la relación de aspecto */
+  width: 25px; /* Ajusta el tamaño según tus necesidades */
+  height: 25px; /* Mantiene la relación de aspecto */
   object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
 }
 
 .maps {
-  width: 35px; /* Ajusta el tamaño según tus necesidades */
-  height: 35px; /* Mantiene la relación de aspecto */
+  width: 30px; /* Ajusta el tamaño según tus necesidades */
+  height: 30px; /* Mantiene la relación de aspecto */
   object-fit: contain;
 }
 
+/* Media query para pantallas pequeñas */
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .Navbar {
@@ -103,10 +111,27 @@
   .Navbar.open .close-icon {
     display: block; /* Mostrar el ícono de cierre cuando la Navbar está abierta */
   }
-  .divRedes{
+
+  .divRedes {
     display: flex;
-    margin-top: 483px;
+    margin-top: 450px;
     width: 100px;
+  }
+
+  .imgNavbar {
+    margin-left: 30px;
+  }
+
+ 
+
+  .ini-nos {
+    display: flex;
+    flex-direction: column; /* Asegura que los enlaces estén en una columna */
+    align-items: flex-start; /* Alinea los enlaces al inicio de la columna */
+    margin-left: 80px; /* Alinea la columna con la imagen */
+  }
+  .Navbar .inicio{
+  margin-left: 13px;
   }
 }
 
@@ -127,6 +152,5 @@
     font-size: 30px;
     display: inline; /* Los elementos se muestran en línea */
   }
-
-  
+ 
 }

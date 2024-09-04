@@ -38,7 +38,7 @@ const Nosotros = () => {
             showStatus={false}
             onChange={handleSlideChange}
           >
-            <div>
+            <div className='imgpol'>
               <img src="img/pol.JPG" alt="Fábrica" />
             </div>
             <div>

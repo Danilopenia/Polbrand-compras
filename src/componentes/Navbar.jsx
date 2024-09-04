@@ -37,9 +37,9 @@ const Navbar = () => {
         <div>
           <img className='imgNavbar' src="/img/polbran.png" alt="Logo" />
         </div>
-        <div>
-          <Link to="/" onClick={toggleNavbar}>Inicio</Link>
-          <Link to="/nosotros" onClick={toggleNavbar}>Nosotros</Link>
+        <div className='ini-nos'>
+          <Link to="/" onClick={toggleNavbar} className='inicio'>Inicio</Link>
+          <Link to="/nosotros" onClick={toggleNavbar} className='nos'>Nosotros</Link>
         </div>
         <div >
           <div className='divRedes'>

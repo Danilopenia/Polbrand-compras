@@ -1,10 +1,14 @@
+
 .nosotros-container {
   padding: 20px;
   font-family: Arial, sans-serif;
+  background-color: #ffffff;
 }
 
 .nosotros-container h1, .nosotros-container h2 {
   color: #333;
+  font-size: 40px;
+  margin-left: 25px;
 }
 
 .nosotros-container p {
@@ -29,15 +33,22 @@
 
 .carousel-container .carousel .slide img {
   max-width: 100%;
-  height: auto;
-  border-radius: 10%;
+  height: auto; /* Ajusta automáticamente la altura según el ancho */
+  object-fit: contain; /* Mantiene la imagen completa dentro del contenedor */
 }
 
 .company-description {
   width: 55%;
   font-size: 1.5rem; /* Ajusta el tamaño del texto */
 }
-
+.imgFabric {
+  height: auto; /* Deja que la altura se ajuste automáticamente */
+  object-fit: contain; /* Evita que la imagen se corte */
+  margin-top: 80px;
+}
+.imgpol{
+  margin-top: 40px;
+}
 @media (min-width: 768px) {
   .content-wrapper {
     flex-direction: row;
@@ -52,12 +63,16 @@
   .company-description {
     margin-left: 5%;
   }
+  .imgpol{
+    height: 10px;
+  }
+ 
 }
 
 @media (max-width: 480px) {
   .nosotros-container {
     padding: 10px;
-    margin-top: 10%;
+    
   }
 
   .carousel-container {
@@ -66,11 +81,12 @@
     margin-bottom: 30px;
   }
 
-  .carousel-container .carousel .slide img {
-    max-width: 100%;
-    height: 20rem; /* Ajusta la altura de la imagen en pantallas pequeñas */
-    object-fit: cover; /* Cubre todo el contenedor sin deformarse */
-  }
+  @media (max-width: 480px) {
+    .carousel-container .carousel .slide img {
+      height: auto; /* Deja que la altura se ajuste automáticamente */
+      max-height: 20rem; /* O bien puedes establecer un máximo si lo deseas */
+      object-fit: contain; /* Evita que la imagen se corte */
+    }
 
   .company-description {
     width: 100%;
@@ -80,13 +96,24 @@
   }
 
   .imgFabric {
-    height: 100%; /* Asegúrate de que ocupe todo el espacio disponible */
-    object-fit: cover; /* Cubre todo el contenedor sin deformarse */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    object-fit: contain; /* Evita que la imagen se corte */
+    margin-top: 30px;
   }
 
   .p2 {
     margin-top: 20%;
     font-weight: 600;
   }
+  .imgpol{
+    margin-top: 40px;
+  }
+}
+.nosotros-container h1, .nosotros-container h2 {
+  color: #333;
+  font-size: 28px;
+  margin-left: 45px;
+  width: 100%;
 }
 
+}
