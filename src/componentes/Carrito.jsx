@@ -18,7 +18,7 @@ const Carrito = () => {
     return cart.reduce((total, product) => total + product.price, 0);
   };
 
-  const whatsappNumber = '1126924913';
+  const whatsappNumber = '+541126924913';
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${getTotalMessage()}`;
 
   return (
