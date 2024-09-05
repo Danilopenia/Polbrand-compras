@@ -66,6 +66,10 @@
   .imgpol{
     height: 10px;
   }
+  .nosotros-container h1, .nosotros-container h2 {
+    margin-left: 0px;
+  }
+  
  
 }
 
@@ -74,7 +78,10 @@
     padding: 10px;
     
   }
-
+  .nosotros-container h1, .nosotros-container h2 {
+    margin-left: 0px;
+  }
+  
   .carousel-container {
     width: 100%;
     margin-left: 0;
@@ -112,7 +119,6 @@
 .nosotros-container h1, .nosotros-container h2 {
   color: #333;
   font-size: 28px;
-  margin-left: 45px;
   width: 100%;
 }
 

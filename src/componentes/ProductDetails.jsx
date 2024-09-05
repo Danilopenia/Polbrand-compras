@@ -70,7 +70,7 @@ const ProductDetails = () => {
         <button onClick={() => addToCart(product)} className="buy-button">Agregar al Carrito</button>
         <div className="contact">
           <p>¿Tienes preguntas sobre este producto? Contáctanos</p>
-          <a href="https://wa.me/1126924913" target="_blank" rel="noopener noreferrer" className="whatsapp-icon">
+          <a href="https://wa.me/+541126924913" target="_blank" rel="noopener noreferrer" className="whatsapp-icon">
             <img src="/img/WhatsApp_icon.png" alt="WhatsApp" />
           </a>
         </div>

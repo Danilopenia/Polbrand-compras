@@ -1,6 +1,7 @@
-a{
+.card a {
   text-decoration: none;
 }
+
 .container {
   text-align: center;
   margin-bottom: 10%;
@@ -8,12 +9,15 @@ a{
   text-decoration: none;
 }
 
-
 .categories {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
+}
+
+.title {
+  font-size: 25px;
 }
 
 .category {
@@ -44,6 +48,9 @@ a{
   overflow: hidden; /* Asegura que el contenido no se desborde */
   position: relative; /* Para ajustar los elementos dentro de la tarjeta */
   text-decoration: none;
+  display: flex;
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: space-between; /* Distribuye los elementos para evitar espacios en blanco */
 }
 
 .imgCard {
@@ -64,8 +71,6 @@ a{
 }
 
 .buy-button {
-  display: inline-block;
-  margin-top: 10px;
   padding: 10px 20px;
   color: white;
   background-color: green;
@@ -73,6 +78,10 @@ a{
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
+  margin-top: 10px; /* Elimina cualquier margen inferior */
+  margin-bottom: 0; /* Asegura que no haya espacio debajo del botón */
+  align-self: center; /* Centra el botón horizontalmente */
+  width: 150px;
 }
 
 .buy-button:hover {
@@ -167,42 +176,41 @@ a{
     font-size: 12px;
     padding: 3px 6px;
   }
-  .products{
-  margin-bottom: 30%;
 
-}
+  .products {
+    margin-bottom: 30%;
+  }
 
-.container .inputP {
-  width: 300px;
-}
-.cart-icon {
-  position: fixed;
-  top: 5px;
-  right: 10px;
-  width: 50px;
-  height: 60px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 500;
-  
-}
-.cart-counter {
-  position: absolute;
-  top: 2px;
-  right: 0px;
-  background: rgb(12, 136, 16);
-  color: rgb(255, 255, 255);
-  border-radius: 50%;
-  padding: 5px 10px;
-  font-size: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .container .inputP {
+    width: 300px;
+  }
 
+  .cart-icon {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    width: 50px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+  }
 
+  .cart-counter {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    background: rgb(12, 136, 16);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .search-bar {

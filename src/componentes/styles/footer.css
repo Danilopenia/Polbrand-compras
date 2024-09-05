@@ -55,6 +55,7 @@ p{
     padding: 10px 20px; /* Ajusta el padding para pantallas pequeñas */
     position: relative; /* Asegura que el footer no esté fijo */
     width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    height: 300px;
   }
 
   .footer-content {

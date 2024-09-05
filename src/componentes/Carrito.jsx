@@ -8,7 +8,7 @@ const Carrito = () => {
   const getTotalMessage = () => {
     let message = 'Hola, quiero comprar los siguientes productos:\n\n';
     cart.forEach((product) => {
-      message += `Producto: ${product.name}, Medida: ${product.medida} ,Precio: AR$${product.price}\n`;
+      message += `Producto: ${product.name}, Medida: ${product.medida}, Precio: AR$${product.price}\n`;
     });
     message += '\nGracias.';
     return encodeURIComponent(message);
@@ -29,24 +29,24 @@ const Carrito = () => {
           <p className='carritoP'>El carrito está vacío</p>
           <img src="img/carritoFondo.png" alt="" />
         </div>
-        
-        
       ) : (
         <div>
           <ul>
             {cart.map((product, index) => (
               <li className='listCart' key={index}>
-                <div>
+                <div className="cart-texts">
                   <h2>{product.name} {product.medida}</h2>
                   <p>{product.color}</p>
                   <p>{product.micronaje}</p>
-                  <p>unidades:{product.cantidad}</p>
+                  <p>unidades: {product.cantidad}</p>
                   <p>Precio: {product.price}</p>
                 </div>
                 <div className='cartdivimg'>
                   <img className='cartimg' src={product.image} alt="" />
                 </div>
-                <button className="removeb" onClick={() => removeFromCart(product.id)}>Eliminar</button>
+                <button className="btn btn-link removeb" onClick={() => removeFromCart(product.id)}>
+                  <i className="bi bi-trash"></i>
+                </button>
               </li>
             ))}
           </ul>

@@ -103,10 +103,10 @@ const Productos = () => {
           <div key={product.id} className="card">
             <Link to={`/product/${product.id}`}>
               <img className='imgCard' src={product.image} alt={product.name} />
-              <h2>{product.name}</h2>
-              <p>{product.medida}</p>
+              <h2 className='title'>{product.name}</h2>
+              <p className='medida'>{product.medida}</p>
               
-              <p>${product.price}</p>
+              <p className='price'>${product.price}</p>
             </Link>
             <button onClick={() => addToCart(product)} className="buy-button">
               Comprar

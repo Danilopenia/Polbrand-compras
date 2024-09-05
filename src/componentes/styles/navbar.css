@@ -9,10 +9,11 @@
   position: fixed; /* Asegura que la Navbar esté por encima de otros elementos */
 }
 .ini-nos{
-  margin-top: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  margin-top: 3px;
 }
 .divRedes{
-  margin-top: 10px;
 }
 
 .Navbar a {
