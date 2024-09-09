@@ -33,8 +33,8 @@ const products = {
     { id: 20, name: 'Tubo clipcord', description: 'Tubo plastico para cubrir cables u otros elementos', color: 'Negro', medida: '20x100cm', cantidad: 500, price: 21000, micronaje: '25 micrones', image: '/img/clipcord.png' },
   ],
   arranque: [
-    { id: 21, name: 'Bolsas de arranque', description: 'Bobina transparente alta calidad y resistente 750gr', color: 'transparente', medida: '25x35cm', cantidad: 1, price: 7000, micronaje: '15 micrones', image: '/img/arranque.png' },
-    { id: 22, name: 'Bolsas de arranque', description: 'Bobina transparente alta calidad y resistente 750gr', color: 'transparente', medida: '20x40cm', cantidad: 1, price: 6000, micronaje: '15 micrones', image: '/img/arranque.png' },
+    { id: 21, name: 'Bolsas de arranque', description: 'Bobina transparente alta calidad y resistente 750gr', color: 'transparente', medida: '25x35cm', cantidad: 1, price: 10000, micronaje: '15 micrones', image: '/img/arranque.png' },
+    { id: 22, name: 'Bolsas de arranque', description: 'Bobina transparente alta calidad y resistente 750gr', color: 'transparente', medida: '20x40cm', cantidad: 1, price: 10000, micronaje: '15 micrones', image: '/img/arranque.png' },
   ],
   bobina: [
     { id: 23, name: 'Bobina de consorcio', description: 'Bobina negra de 20kg sin cortar', color: 'Negro', medida: '60cm ancho', cantidad: 1, price: 30000, micronaje: '60 micrones', image: '/img/bobinaN.png' },
